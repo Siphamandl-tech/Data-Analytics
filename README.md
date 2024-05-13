@@ -7,3 +7,29 @@ Business landscape, data analytics is a compelling subject that transcends indus
 Analytics programs allow businesses to access the untapped value locked within their data. Today, many organizations recognize the potential value of this work but are still in the early stages of developing their analytics programs.
 Once data is in a suitable form, data professionals apply analytic techniques to draw conclusions from their data, create visualizations to depict the story of their data, and develop reports and dashboards to effectively communicate the results of their work to business leaders.
 
+#Module 2: Data Preparation and Exploration
+-Data Concepts and Environments
+-Identify basic concepts of data schemas and dimensions
+-Understanding the domain of Data Mining
+-Explain data acquisition concepts
+-Explain common techniques for data manipulation and query optimization
+
+#Exploring Databases
+-Relational
+-Nonrelational
+
+Relational Databases
+Relational databases are pieces of software that let you make an operational system out of an ERD. You start with a relational model and create a physical design. Relational entities correspond to database tables, and entity attributes correspond to table columns. 
+
+Nonrelational Databases
+A nonrelational database does not have a predefined structure based on tabular data. The result is a highly flexible approach to storing data. However, the data types available in relational databases are absent. As a result, you need to know more about the data itself to interact with it. Data validation happens in code, as opposed to being done in the database. 
+
+#Database Use Cases
+
+
+
+
+
+
+
+

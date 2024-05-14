@@ -7,22 +7,38 @@ Business landscape, data analytics is a compelling subject that transcends indus
 Analytics programs allow businesses to access the untapped value locked within their data. Today, many organizations recognize the potential value of this work but are still in the early stages of developing their analytics programs.
 Once data is in a suitable form, data professionals apply analytic techniques to draw conclusions from their data, create visualizations to depict the story of their data, and develop reports and dashboards to effectively communicate the results of their work to business leaders.
 
-#Module 2: Data Preparation and Exploration
+# Module 2: Data Preparation and Exploration
 -Data Concepts and Environments
 -Identify basic concepts of data schemas and dimensions
 -Understanding the domain of Data Mining
 -Explain data acquisition concepts
 -Explain common techniques for data manipulation and query optimization
 
-#Exploring Databases
+# Exploring Databases
 -Relational
 -Nonrelational
 
 Relational Databases
 Relational databases are pieces of software that let you make an operational system out of an ERD. You start with a relational model and create a physical design. Relational entities correspond to database tables, and entity attributes correspond to table columns. 
+-Structure: Relational databases organize data into structured tables with rows and columns, where each row represents a record and each column represents a field or attribute.
+-Query Language: SQL (Structured Query Language) is typically used to query and manipulate data in relational databases.
+-Examples: MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server.
+
 
 Nonrelational Databases
-A nonrelational database does not have a predefined structure based on tabular data. The result is a highly flexible approach to storing data. However, the data types available in relational databases are absent. As a result, you need to know more about the data itself to interact with it. Data validation happens in code, as opposed to being done in the database. 
+A nonrelational database does not have a predefined structure based on tabular data. The result is a highly flexible approach to storing data. However, the data types available in relational databases are absent. As a result, you need to know more about the data itself to interact with it. Data validation happens in code, as opposed to being done in the database.
+- Structure: Non-relational databases store data in various formats such as key-value pairs, documents, wide-column stores, or graph databases. They are designed to handle unstructured or semi-structured data.
+- Query Language: NoSQL databases often have their own query languages or APIs tailored to the specific data model they use. Some support SQL-like querying, while others use JSON-like syntax or specialized APIs.
+- Examples: MongoDB (document store), Cassandra (wide-column store), Redis (key-value store), Neo4j (graph database).
+
+  # Data Structure:
+  If your data has a clear structure with well-defined relationships and a fixed schema, a relational database may be suitable. Non-relational databases are more flexible for handling diverse or evolving data structures.
+# Scalability:
+Non-relational databases often offer better scalability options for distributed and big data applications.
+# Query Complexity:
+Relational databases excel in complex queries involving joins, aggregations, and transactions, while NoSQL databases may be better suited for simpler, read-heavy operations.
+# Consistency vs. Flexibility:
+Relational databases prioritize data consistency and ACID properties, whereas NoSQL databases may sacrifice strict consistency for greater flexibility and scalability.
 
 #Database Use Cases
 

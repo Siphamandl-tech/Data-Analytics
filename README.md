@@ -54,21 +54,22 @@ Relational databases prioritize data consistency and ACID properties, whereas No
 # Database Use Cases
 Databases tend to support two major categories of data processing: Online Transactional Processing (OLTP) and Online Analytical Processing (OLAP).
 
-Online Transactional Processing
-
+-Online Transactional Processing
+-
 OLTP systems handle the transactions we encounter every day. Example transactions include booking a flight reservation, ordering something online, or executing a stock trade. While the number of transactions a system handles on a given day can be very high, individual transactions process small amounts of data. OLTP systems balance the ability to write and read data efficiently.
 
-Online Analytical Processing
-
+-Online Analytical Processing
+-
 OLAP systems focus on the ability of organizations to analyze data. While OLAP and OLTP databases can both use relational database technology, their structures are fundamentally different. OLTP databases need to balance transactional read and write performance, resulting in a highly normalized design. Typically, OLTP databases are in 3NF.
 
-Schema Concepts
+-Schema Concepts
+-
 The design of a database schema depends on the purpose it serves. Transactional systems require highly normalized databases, whereas a denormalized design is more appropriate for analytical systems. A data warehouse is a database that aggregates data from many transactional systems for analytical purposes. Transactional data may come from systems that power the human resources, sales, marketing, and product divisions. A data warehouse facilitates analytics across the entire company.
 
--A data mart is a subset of a data warehouse. 
--Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization.
--A data lake stores raw data in its native format instead of conforming to a relational database structure
--
+- A data mart is a subset of a data warehouse. 
+- Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization.
+- A data lake stores raw data in its native format instead of conforming to a relational database structure
+
 
 
 

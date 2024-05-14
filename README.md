@@ -18,8 +18,8 @@ Exploring Databases
 -Relational
 -Nonrelational
 
-Relational Databases
-
+Relational Databases(Structured data)
+-
 Relational databases are pieces of software that let you make an operational system out of an ERD. You start with a relational model and create a physical design. Relational entities correspond to database tables, and entity attributes correspond to table columns.
 
 -Structure: Relational databases organize data into structured tables with rows and columns, where each row represents a record and each column represents a field or attribute.
@@ -29,14 +29,14 @@ Relational databases are pieces of software that let you make an operational sys
 -Examples: MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server.
 
 
-Nonrelational Databases
-
+Nonrelational Databases(Unstructured data)
+-
 A nonrelational database does not have a predefined structure based on tabular data. The result is a highly flexible approach to storing data. However, the data types available in relational databases are absent. As a result, you need to know more about the data itself to interact with it. Data validation happens in code, as opposed to being done in the database.
 
 - Structure: Non-relational databases store data in various formats such as key-value pairs, documents, wide-column stores, or graph databases. They are designed to handle unstructured or semi-structured data.
-- 
+  
 - Query Language: NoSQL databases often have their own query languages or APIs tailored to the specific data model they use. Some support SQL-like querying, while others use JSON-like syntax or specialized APIs.
-- 
+  
 - Examples: MongoDB (document store), Cassandra (wide-column store), Redis (key-value store), Neo4j (graph database).
 
 Data Structure:
@@ -54,21 +54,48 @@ Relational databases prioritize data consistency and ACID properties, whereas No
 # Database Use Cases
 Databases tend to support two major categories of data processing: Online Transactional Processing (OLTP) and Online Analytical Processing (OLAP).
 
--Online Transactional Processing
+Online Transactional Processing
 -
 OLTP systems handle the transactions we encounter every day. Example transactions include booking a flight reservation, ordering something online, or executing a stock trade. While the number of transactions a system handles on a given day can be very high, individual transactions process small amounts of data. OLTP systems balance the ability to write and read data efficiently.
 
--Online Analytical Processing
+Online Analytical Processing
 -
 OLAP systems focus on the ability of organizations to analyze data. While OLAP and OLTP databases can both use relational database technology, their structures are fundamentally different. OLTP databases need to balance transactional read and write performance, resulting in a highly normalized design. Typically, OLTP databases are in 3NF.
 
--Schema Concepts
+Schema Concepts
 -
 The design of a database schema depends on the purpose it serves. Transactional systems require highly normalized databases, whereas a denormalized design is more appropriate for analytical systems. A data warehouse is a database that aggregates data from many transactional systems for analytical purposes. Transactional data may come from systems that power the human resources, sales, marketing, and product divisions. A data warehouse facilitates analytics across the entire company.
 
 - A data mart is a subset of a data warehouse. 
 - Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization.
 - A data lake stores raw data in its native format instead of conforming to a relational database structure
+
+- The star schema design to facilitate analytical processing gets its name from what the schema looks like when looking at its entity relationship diagram
+- At the centre of the star is a fact table. Fact tables chiefly store numerical facts about a business.
+- The schema design centres on reporting on the cost and profitability of procedures.
+- Qualitative data, including names, addresses, and descriptions, is stored in a series of dimension tables that connect to the main fact table
+
+
+When data moves from an OLTP design into a star schema, there is a significant amount of data duplication. As such, a star schema consumes more space than its associated OLTP design to store the same data. These additional resource needs are one of the factors that makes data warehouses expensive to operate.
+
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/2044a28a-0f6e-44ad-9d1a-d749408d2924)
+
+https://d24jp206mxeyfm.cloudfront.net/assets/courseware/v1/c091c28615c1797c09308149855f56cf/asset-v1:CITI+DA+2023+type@asset+block/Figure_3-21_OLTP_and_OLAP_query_example.PNG
+
+
+Dimensionality 
+-
+Dimensionality refers to the number of attributes a table has. The greater the number of attributes, the higher the dimensionality. A dimension table provides additional context around data in fact tables. For example, consider the Person_Dimension table in Figure 3.22, which contains details about people. If you need additional data about people, add columns to Person_Dimension.
+
+Product dimension
+Handling Dimensionality
+
+
+
+
+
+
+
 
 
 

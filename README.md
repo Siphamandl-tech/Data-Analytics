@@ -19,6 +19,7 @@ Exploring Databases
 -Nonrelational
 
 Relational Databases
+
 Relational databases are pieces of software that let you make an operational system out of an ERD. You start with a relational model and create a physical design. Relational entities correspond to database tables, and entity attributes correspond to table columns.
 
 -Structure: Relational databases organize data into structured tables with rows and columns, where each row represents a record and each column represents a field or attribute.
@@ -29,6 +30,7 @@ Relational databases are pieces of software that let you make an operational sys
 
 
 Nonrelational Databases
+
 A nonrelational database does not have a predefined structure based on tabular data. The result is a highly flexible approach to storing data. However, the data types available in relational databases are absent. As a result, you need to know more about the data itself to interact with it. Data validation happens in code, as opposed to being done in the database.
 
 - Structure: Non-relational databases store data in various formats such as key-value pairs, documents, wide-column stores, or graph databases. They are designed to handle unstructured or semi-structured data.
@@ -49,7 +51,7 @@ Relational databases excel in complex queries involving joins, aggregations, and
 Consistency vs. Flexibility:
 Relational databases prioritize data consistency and ACID properties, whereas NoSQL databases may sacrifice strict consistency for greater flexibility and scalability.
 
-#Database Use Cases
+# Database Use Cases
 
 
 

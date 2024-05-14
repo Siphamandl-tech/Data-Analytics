@@ -14,30 +14,39 @@ Once data is in a suitable form, data professionals apply analytic techniques to
 -Explain data acquisition concepts
 -Explain common techniques for data manipulation and query optimization
 
-# Exploring Databases
+Exploring Databases
 -Relational
 -Nonrelational
 
 Relational Databases
-Relational databases are pieces of software that let you make an operational system out of an ERD. You start with a relational model and create a physical design. Relational entities correspond to database tables, and entity attributes correspond to table columns. 
+Relational databases are pieces of software that let you make an operational system out of an ERD. You start with a relational model and create a physical design. Relational entities correspond to database tables, and entity attributes correspond to table columns.
+
 -Structure: Relational databases organize data into structured tables with rows and columns, where each row represents a record and each column represents a field or attribute.
+
 -Query Language: SQL (Structured Query Language) is typically used to query and manipulate data in relational databases.
+
 -Examples: MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server.
 
 
 Nonrelational Databases
 A nonrelational database does not have a predefined structure based on tabular data. The result is a highly flexible approach to storing data. However, the data types available in relational databases are absent. As a result, you need to know more about the data itself to interact with it. Data validation happens in code, as opposed to being done in the database.
+
 - Structure: Non-relational databases store data in various formats such as key-value pairs, documents, wide-column stores, or graph databases. They are designed to handle unstructured or semi-structured data.
+- 
 - Query Language: NoSQL databases often have their own query languages or APIs tailored to the specific data model they use. Some support SQL-like querying, while others use JSON-like syntax or specialized APIs.
+- 
 - Examples: MongoDB (document store), Cassandra (wide-column store), Redis (key-value store), Neo4j (graph database).
 
-  # Data Structure:
-  If your data has a clear structure with well-defined relationships and a fixed schema, a relational database may be suitable. Non-relational databases are more flexible for handling diverse or evolving data structures.
-# Scalability:
+Data Structure:
+If your data has a clear structure with well-defined relationships and a fixed schema, a relational database may be suitable. Non-relational databases are more flexible for handling diverse or evolving data structures.
+
+Scalability:
 Non-relational databases often offer better scalability options for distributed and big data applications.
-# Query Complexity:
+
+Query Complexity:
 Relational databases excel in complex queries involving joins, aggregations, and transactions, while NoSQL databases may be better suited for simpler, read-heavy operations.
-# Consistency vs. Flexibility:
+
+Consistency vs. Flexibility:
 Relational databases prioritize data consistency and ACID properties, whereas NoSQL databases may sacrifice strict consistency for greater flexibility and scalability.
 
 #Database Use Cases

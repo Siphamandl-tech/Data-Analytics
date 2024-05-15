@@ -90,6 +90,16 @@ Dimensionality refers to the number of attributes a table has. The greater the n
 Product dimension
 Handling Dimensionality
 
+-System functions are essential components of a computer system or software application that perform specific tasks or operations to manage, control, or support various functionalities.
+-These system functions are fundamental to the operation of operating systems, software applications, and computer systems, enabling them to perform tasks efficiently, manage resources effectively, and provide a seamless user experience.
+
+-Query optimization is a critical aspect of database management and performance tuning, aimed at improving the efficiency and speed of database queries. 
+-By implementing these query optimization techniques and best practices, database administrators and developers can enhance the performance, scalability, and responsiveness of database systems, leading to improved user experience and operational efficiency.
+
+
+
+
+
 
 
 

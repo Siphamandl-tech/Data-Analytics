@@ -160,9 +160,31 @@ FROM   Animal
 Query Optimization
 -
 Writing an SQL query is straightforward. Writing a SQL query that efficiently does what you intend can be more difficult. There are several factors to consider when creating well-performing SQL.
+- Parametrization
 
+- Indexing
+  
+- Data subsets and Temporary Tables
+  
+- Execution Plan
 
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/27b132ba-92dc-44ef-a721-382dc0e3b71f)
 
+Databases are technology platforms for processing and storing data. There are two primary types of databases: relational and non-relational. Relational databases are ideal when you have tabular data, while there are numerous non-relational offerings when you need more flexibility than the structure a relational database imposes.
+
+Using a relational database as a technology platform, you can build transactional or analytical databases to address the business need. Transactional (OLTP) and analytical (OLAP) databases require different schema design approaches. Since a transactional database needs to balance reading and writing data, it follows a highly normalized schema design.
+
+On the other hand, analytical databases prioritize reading data and follow a denormalized approach. The star and snowflake schema designs are two approaches to structuring data for analysis. Both methods implement dimensional modeling, which organizes quantitative data into facts and qualitative data into dimensions.
+
+There are multiple ways to acquire data for analysis. For example, most data warehouses source data from transactional systems. To copy data from a transactional system, you can use an ETL or ELT approach. ETL leverages technology external to a relational database to transform data, while ELT uses the power of a relational database to do the transformation. Depending on the rate of change and data volume, you can take a complete refresh or delta load approach.
+
+You can also acquire data from external sources. APIs are integration components that encapsulate business logic and programmatically expose data. It is common to interact with APIs to source data for both transactional and analytical purposes. You may also find yourself needing to scrape data from a website or pull data from a public database.
+
+There are times when you need primary source data that you cannot obtain programmatically. In that case, you may end up conducting a survey or observing people and processes.
+
+Once you have data in a relational database, you need to be comfortable manipulating it. Structured Query Language (SQL) is the standard for relational data manipulation. With SQL queries, you can filter, sort, compare, and aggregate data.
+
+There are times when you will be working with large volumes of data that impact performance. There are several approaches you can take to mitigate performance issues. When writing frequently executed queries, make sure you use parametrization to reduce the database's parsing load. Reducing the number of records you're working with is another viable approach, which you can achieve by subsetting the data and using temporary tables. If you have queries taking more time than you expect, work with a database administrator to review the query's execution plan and ensure you have the appropriate indexing strategy.
 
 
 

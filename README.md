@@ -100,8 +100,49 @@ Handling Dimensionality
 
 Working with Data
 -
-To turn a database design into an operational database ready to accept data, you use the #Data Definition Language (DDL)# components of SQL. DDL lets you create, modify, and delete tables and other associated database objects.
+- To turn a database design into an operational database ready to accept data, you use the *Data Definition Language (DDL)* components of SQL. DDL lets you create, modify, and delete tables and other associated database objects.
 
+- To generate insights, a productive analyst must be comfortable using the Data Manipulation Language (DML) capabilities of SQL to insert, modify, and retrieve information from databases. While DDL manages the structure of a database, DML manages the data in the database.
+
+Filtering and Logical Operators
+-
+A query can have multiple filtering conditions. You need to use a logical operator to account for complex filtering needs. For example, suppose you need to retrieve the name and breed for dogs weighing more than 60 pounds. In that case, you can enhance the query using the AND logical operator, as follows:
+
+SELECT Animal_Name, Breed_Name
+
+FROM  Animal
+
+WHERE Animal_Type = 'Dog'
+
+AND  Weight> 60
+
+The AND operator evaluates the Animal_Type and Weight filters together, only returning records that match both criteria. OR is another frequently used logical operator. For example, suppose you want to see the name and breed for all dogs and any animals that weigh more than 10 pounds regardless of the animal type. The following query delivers the answer to that question:
+
+SELECT Animal_Name, Breed_Name
+
+FROM  Animal
+
+WHERE Animal_Type = 'Dog'
+
+OR   Weight> 10
+
+Complex queries frequently use multiple logical operators at the same time. It is good to use parentheses around filter conditions to help make queries easy for people to read and understand.
+
+Sorting
+-
+When querying a database, you frequently specify the order in which you want your results to return. The ORDER BY clause is the component of a SQL query that makes sorting possible. Similar to how the WHERE clause performs, you do not have to specify the columns you are using to sort the data in the SELECT clause.
+
+For example, suppose you want to retrieve the animal and breed for dogs over 60 pounds, with the oldest dog listed first. The following query delivers the answer:
+
+SELECT  Animal_Name, Breed_Name
+
+FROM   Animal
+
+WHERE  Animal_Type = 'Dog'
+
+AND   Weight> 60
+
+ORDER BY Date_of_Birth ASC
 
 
 

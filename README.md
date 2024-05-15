@@ -168,6 +168,9 @@ Writing an SQL query is straightforward. Writing a SQL query that efficiently do
   
 - Execution Plan
 
+Chapter Summary
+-
+
 ![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/27b132ba-92dc-44ef-a721-382dc0e3b71f)
 
 Databases are technology platforms for processing and storing data. There are two primary types of databases: relational and non-relational. Relational databases are ideal when you have tabular data, while there are numerous non-relational offerings when you need more flexibility than the structure a relational database imposes.

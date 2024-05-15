@@ -100,7 +100,7 @@ Handling Dimensionality
 
 Working with Data
 -
-To turn a database design into an operational database ready to accept data, you use the ~Data Definition Language (DDL)~ components of SQL. DDL lets you create, modify, and delete tables and other associated database objects.
+To turn a database design into an operational database ready to accept data, you use the #Data Definition Language (DDL)# components of SQL. DDL lets you create, modify, and delete tables and other associated database objects.
 
 
 

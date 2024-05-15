@@ -144,8 +144,22 @@ AND   Weight> 60
 
 ORDER BY Date_of_Birth ASC
 
+IFF(boolean_expression, true_value, false_value)
+-
+As you can see from the syntax, the IFF function expects the following three parameters:
 
+Boolean Expression:  The expression must return either TRUE or FALSE.
+True Value:  If the Boolean expression returns TRUE, the IFF function will return this value.
+False Value:  If the Boolean expression returns FALSE, the IFF function will return this value.
+The following query, using the IFF function, generates the results in Table 3.11:
 
+SELECT  Animal_Name, IFF(Sex = 'M', 'Male', 'Female')
+
+FROM   Animal
+
+Query Optimization
+-
+Writing an SQL query is straightforward. Writing a SQL query that efficiently does what you intend can be more difficult. There are several factors to consider when creating well-performing SQL.
 
 
 

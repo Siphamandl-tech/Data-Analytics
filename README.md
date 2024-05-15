@@ -88,6 +88,7 @@ Dimensionality
 Dimensionality refers to the number of attributes a table has. The greater the number of attributes, the higher the dimensionality. A dimension table provides additional context around data in fact tables. For example, consider the Person_Dimension table in Figure 3.22, which contains details about people. If you need additional data about people, add columns to Person_Dimension.
 
 Product dimension
+
 Handling Dimensionality
 
 -System functions are essential components of a computer system or software application that perform specific tasks or operations to manage, control, or support various functionalities.
@@ -97,7 +98,9 @@ Handling Dimensionality
 -By implementing these query optimization techniques and best practices, database administrators and developers can enhance the performance, scalability, and responsiveness of database systems, leading to improved user experience and operational efficiency.
 
 
-
+Working with Data
+-
+To turn a database design into an operational database ready to accept data, you use the ~Data Definition Language (DDL)~ components of SQL. DDL lets you create, modify, and delete tables and other associated database objects.
 
 
 

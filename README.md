@@ -190,6 +190,82 @@ Once you have data in a relational database, you need to be comfortable manipula
 There are times when you will be working with large volumes of data that impact performance. There are several approaches you can take to mitigate performance issues. When writing frequently executed queries, make sure you use parametrization to reduce the database's parsing load. Reducing the number of records you're working with is another viable approach, which you can achieve by subsetting the data and using temporary tables. If you have queries taking more time than you expect, work with a database administrator to review the query's execution plan and ensure you have the appropriate indexing strategy.
 
 
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/896b1899-82da-4424-8f22-65775d2e5fb8)
+
+A good analyst needs a firm understanding of why data needs to be clean, techniques for cleaning, and ways to verify data quality.
+
+When assessing data quality, keep in mind that organizations with complex systems frequently encounter data duplication challenges. When an organization integrates multiple systems, you need to be on the lookout for redundant data. Apart from duplication and redundancy, you need to check data values for inconsistencies. Inconsistencies can include data that is missing, that falls outside an expected range of values, or that does not match the target data type. Keep in mind that outliers have an outsized effect on statistical analysis. When initially exploring your data, it is imperative to identify, understand, and address any outliers in your data.
+
+When preparing data for analysis, there are numerous manipulation techniques you can use. Analysts need a deep understanding of how your data sources will work together. You may have to merge or blend sources or concatenate or split columns within an individual source. Depending on your statistical technique of choice, you may end up recoding a categorical variable as numeric. In today's world, there is an overabundance of data. You may need to reduce the number of rows or columns to facilitate your analysis.
+
+Invariably, you will want to compare the effects of different attributes. Recall that when you have multiple columns using disparate measurements, you need to normalize the data values. Normalizing avoids exaggerating the impact of a column based on the numeric values it contains.
+
+Recognizing opportunities where data quality errors can occur is essential for the modern data analyst. Data acquisition, transformation, conversion, manipulation, and visualization are steps in the analytical process where quality issues arise. Beyond recognizing when quality errors happen, an analyst needs to consider automatically injecting quality improvements into data collection and preparation processes.
+
+When thinking about how to assess quality, keep in mind the dimensions of data quality. It is essential to define your business objectives through the lenses of data accuracy, completeness, consistency, uniqueness, and validity. Having the right data at the right time improves your ability to make data-informed decisions.
+
+Once you understand where your data comes from and how you are going to use it, be sure to define ways in which you will continuously assess its quality. Quality assessment methods include everything from reasonable expectations and audits to advanced statistical techniques.
+
+
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/bee4bffd-93b9-4665-8feb-48b5de989368)
+
+Wielding statistical techniques to analyze data is a cornerstone ability of the modern data analyst. It is imperative to appreciate the difference between census and sample data. A census consists of an observation of every member of the population, whereas a sample is data about a specific subset. Since it is frequently prohibitive to obtain a census, analysts typically work with sample data. Whether you are working with census or sample data, you end up using statistics.
+
+Descriptive statistics is a branch of statistics that describes a dataset. Descriptive statistics help you understand the data's characteristics and can help understand events that have already happened. One category of descriptive statistics is measures of frequency. Measures of frequency shed light on recurring values in your data. Count is the most common measure of frequency. For example, one of the first things an analyst does when encountering a new table in a database is to get the total number of rows by issuing the following SQL statement:
+
+SELECT COUNT(*) FROM <table_name>
+
+Once you understand the total number of rows you are dealing with, it is common to understand proportions in the data to check for bias. For example, if the population you are studying is split evenly between men and women, you would expect that any random sample from the population would have an equal proportion of men and women.
+
+Measures of central tendency are descriptive statistics that help you understand how tightly or widely distributed your data is. Mean, median, and mode are all measures of central tendency. Exploring how far apart the mean and median values are can tell you whether you are working with data that follows a normal distribution. If the mean and median are close, the distribution is likely normal. If the mean and median are far apart, the data is skewed to one side.
+
+Measures of dispersion help you understand how widely distributed your data is. The range, or difference between maximum and minimum values, establishes the upper and lower limits for numeric variables in your data. Variance is a dispersion measure that calculates how far each observation in a dataset is from its mean value and is most often used as a path to calculating standard deviation. Standard deviation, or the square root of variance, is a frequently referenced statistic due to the empirical rule, stating that almost every observation falls within three standard deviations from the mean in a normal distribution.
+
+Measures of position help identify where a specific value for an observation is relative to other values. The interquartile range is a valuable measure of position, as it places all values of a variable into one of four quartiles where 50 percent of the values in a dataset are in the second and third quartiles.
+
+Inferential statistics differs from descriptive statistics in that you can use inferential statistics from a sample to draw conclusions about the population. Making generalizations about the population using sample data is a powerful concept that enables impactful decisions.
+
+When performing statistical inference, you have a degree of uncertainty as inferential statistics are based on probabilities. Confidence intervals help you understand how a test statistic relates to its corresponding population parameter. A confidence interval provides the upper and lower limits for a given confidence level that the population parameter falls within the confidence interval's range. The higher the confidence level, the wider the range of values that fall within the confidence interval.
+
+You also use statistics to conduct hypothesis tests. Hypothesis tests assert two mutually exclusive statements in the form of the null and alternative hypotheses. When hypothesis testing, you seek to reject the status quo of the null hypothesis by using statistics to assert that the alternative hypothesis is plausible.
+
+The sample size impacts the distribution you use when conducting hypothesis tests. When working with numeric data, you can use the normal distribution if you know the population standard deviation and have a sample size greater than 30. However, if the population standard deviation is unknown or the sample size is less than 30, you use the t-distribution. If you are working with categorical data, you use the chi-square distribution for comparison purposes.
+
+You have to account for potential mistakes when hypothesis testing. A Type I error is a false positive when you reject the status quo when it is true. A Type II error is a false negative when you accept the status quo when it is false.
+
+Regardless of the statistics you use, it is crucial to have a systematic approach when conducting an analysis. Having a clearly defined scope that the business representative agrees on is imperative. You also need to have access to good sources of data. With these two things in place, you initiate an analytics project by performing an exploratory data analysis (EDA). The EDA will inform you about the type of data you are working with and whether you have any missing data or outlier values, and it will provide summary statistics about each variable in your dataset.
+
+
+Differentiate between descriptive and inferential statistics. 
+
+Descriptive statistics help you understand past events by summarizing data and include measures of frequency and measures of dispersion. Inferential statistics use the powerful concept of concluding an overall population using a sample from that population.
+
+Calculate measures of central tendency. 
+
+Given a dataset, you should feel comfortable calculating the mean, median, and mode. Recall that the mean is the mathematical average. The median is the value that separates the lower and higher portions of an ordered set of numbers. The mode is the value that occurs most frequently. While mean and median are applicable for numeric data, evaluating the mode is particularly useful when describing categorical data.
+
+Explain how to interpret a p-value when hypothesis testing. 
+
+Recall that p-values denote the probability that a test statistic is as extreme as the actual result, presuming the null hypothesis is true. The lower the p-value, the more evidence there is to reject the null hypothesis. Generally speaking, it is safe to consider p-values under 0.05 as being statistically significant. With p-values greater than 0.05, there is less evidence supporting the alternative hypothesis.
+
+Explain the difference between a Type I and Type II error. 
+
+When hypothesis testing, a Type I error is a false positive, while a Type II error is a false negative. Suppose you have a null hypothesis stating that a new vaccine is ineffective and an alternative hypothesis stating that the vaccine has its intended impact. Concluding that the vaccine is effective when it isn't is a Type I error. A Type II error is a false conclusion that the vaccine does not work when it does have the intended effect.
+
+Describe the purpose of exploratory data analysis (EDA). 
+
+One of the first things you should perform with any new dataset is EDA, a structured approach using descriptive statistics to summarize the characteristics of a dataset, identify any outliers, and help you develop your plan for further analysis.
+
+
+
+
+
+
+
+
+
+
+
 
 
 

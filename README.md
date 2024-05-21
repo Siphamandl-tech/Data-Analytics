@@ -302,17 +302,24 @@ As you prepare for the exam, you'll need to be familiar with the major commands 
 
 There are three DDL commands that you should know:
 -
-The CREATE command is used to create a new table within your database or a new database on your server.
-The ALTER command is used to change the structure of a table that you've already created. If you want to modify your database or table, the ALTER command lets you make those modifications.
-The DROP command deletes an entire table or database from your server. It's definitely a command that you'll want to use with caution!
+-The CREATE command is used to create a new table within your database or a new database on your server.
+
+-The ALTER command is used to change the structure of a table that you've already created. If you want to modify your database or table, the ALTER command lets you make those modifications.
+
+-The DROP command deletes an entire table or database from your server. It's definitely a command that you'll want to use with caution!
 
 There are also four DML commands that you should know:
 -
-The SELECT command is used to retrieve information from a database. It is the most commonly used command in SQL as it is used to pose queries to the database and retrieve the data that you're interested in working with.
-The INSERT command is used to add new records to a database table. If you are adding a new employee, customer order, or marketing activity, the INSERT command allows you to add one or more rows to your database.
-The UPDATE command is used to modify rows in the database. If you need to change something that is already stored in your database, the UPDATE command will do that.
-The DELETE command is used to delete rows from a database table. Don't confuse this command with the DROP command. The DROP command deletes an entire database table, whereas the DELETE command just deletes certain rows from the table.
-Users, administrators, and developers access databases in different ways. 
+-The SELECT command is used to retrieve information from a database. It is the most commonly used command in SQL as it is used to pose queries to the database and retrieve the data that you're interested in working with.
+
+-The INSERT command is used to add new records to a database table. If you are adding a new employee, customer order, or marketing activity, the INSERT command allows you to add one or more rows to your database.
+
+-The UPDATE command is used to modify rows in the database. If you need to change something that is already stored in your database, the UPDATE command will do that.
+
+-The DELETE command is used to delete rows from a database table. Don't confuse this command with the DROP command. The DROP command deletes an entire database table, whereas the DELETE command just deletes certain rows from the table.
+
+Users, administrators, and developers access databases in different ways.
+-
 
 First, a developer, administrator, or power user who knows SQL might directly access the database server and send it a SQL command for execution. This often happens through a graphical user interface, such as the Azure Data Studio interface shown in Figure 5. This tool allows you to write database queries in SQL, send them to the database, and then view the results.
 

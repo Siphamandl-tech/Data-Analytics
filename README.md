@@ -361,7 +361,8 @@ RapidMiner
 RapidMiner is another graphical machine learning tool that works in a manner similar to IBM SPSS Modeler. It offers access to hundreds of different algorithms that may be placed in a visually designed machine-learning workflow. RapidMiner also offers prebuilt analytic templates for common business scenarios. Figure 12 shows the visual design of a decision tree task in RapidMiner.
 
 Figure 11: Exploring a data model in SPSS Modeler
-https://d24jp206mxeyfm.cloudfront.net/assets/courseware/v1/12084f9ec02261c73a262d6b57a92dc3/asset-v1:CITI+DA+2023+type@asset+block/Figure_11_Exploring_a_data_model_in_SPSS_Modeler.png
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/9d617dbb-a139-430f-81b5-1cf33820ebb4)
+
 
 Figure 13 shows the result of creating this decision tree in RapidMiner. The presentation of results is not quite as visually appealing as the decision tree in SPSS Modeler, but it provides similar information to the analyst.
 https://d24jp206mxeyfm.cloudfront.net/assets/courseware/v1/5e9c7712d34574cff2a662d4bf212140/asset-v1:CITI+DA+2023+type@asset+block/Figure_12_Designing_a_machine_learning_task_in_RapidMiner.png
@@ -371,6 +372,8 @@ Figure 12: Designing a machine learning task in RapidMiner
 ![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/e33af559-b253-472d-8780-ee1289035f94)
 Figure 13: Exploring a data model in RapidMiner
 
+Analytics Suites
+-
 
 
 

@@ -379,11 +379,17 @@ IBM Cognos
 IBM Cognos is an example of one of these integrated analytics suites. It uses a web-based platform to offer analysts within an organization access to their data and is backed by IBM's Watson artificial intelligence capability. The major components of Cognos include the following:
 
 Cognos Connection is a web-based portal that offers access to other elements of the Cognos suite.
+
 Query Studio provides access to data querying and basic reporting tools.
+
 Report Studio offers advanced report design tools for complex reporting needs.
+
 Analysis Studio enables advanced modeling and analytics on large datasets.
+
 Event Studio provides real-time data monitoring and alerting, allowing business leaders to be immediately notified when certain events take place and/or provide automated responses to those events.
+
 Metric Studio offers the ability to create scorecards for business leaders to quickly analyze key metrics from across the organization.
+
 Cognos Viewer allows stakeholders to easily interact with data and analyses prepared using Cognos.
 ![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/523ab435-a6b9-4309-9a21-162252243a50)
 
@@ -394,9 +400,13 @@ Power BI is Microsoft's analytics suite built on the company's popular SQL Serve
 The major components of Power BI include the following:
 -
 Power BI Desktop is a Windows application for data analysts, allowing them to interact with data and publish reports for others.
+
 The Power BI service is Microsoft's software-as-a-service (SaaS) offering that hosts Power BI capabilities in the cloud for customers to access.
+
 Mobile apps for Power BI provide users of iOS, Android, and Windows devices with access to Power BI capabilities.
+
 Power BI Report Builder allows developers to create paginated reports that are designed for printing, email, and other distribution methods.
+
 Power BI Report Server offers organizations the ability to host their own Power BI environment on internal servers for stakeholders to access.
 ![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/93c9a79c-06f8-461b-a3ff-b0dbf47ce273)
 

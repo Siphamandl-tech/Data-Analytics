@@ -327,4 +327,55 @@ Utilities like Azure Data Studio can do more than just retrieve data. They also 
 
 ![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/2c1cf797-ed00-4eb0-83e4-089c47b58e19)
 
+Statistics Packages
+-
+Of course, not everyone has the ability or desire to write their own software. It is often far simpler to work within software packages that provide the capabilities that we need. Statistics packages are a great example of this. These software packages go beyond the simple statistical analyses that are possible in spreadsheets and provide access to advanced statistical environments that are accessible through a graphical user interface and/or a built-in scripting language.
+
+IBM SPSS
+-
+One of the most popular pieces of statistical software is IBM's SPSS package. SPSS is one of the oldest statistical software packages, first released in 1968, but it continues to be used today by many statisticians. Figure 6 shows an example of calculating the correlations between a set of variables using SPSS.
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/1fe43d80-1fd3-4b56-b459-592017facba9)
+
+Stata
+-
+Stata is yet another statistical analysis package that dates back to the 1980s and continues to be updated today. It offers essentially the same features as SPSS and SAS and provides users with both a graphical interface and a command-line interface depending on their personal preference. Stata is less widely used than the more popular SAS and SPSS tools. Figure 8 shows an example of building and visualizing a linear regression model in Stata.
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/021a68d8-6a41-4a74-8817-4653c3faac9b)
+
+Minitab
+-
+The final statistical software package covered on the Data+ exam is Minitab. And, once again, Minitab shares most of the same features as SPSS, SAS, and Stata but fits into the same category as Stata - an older tool that is not widely used today.
+Moving on from statistics-focused tools, the industry also makes use of a set of graphical tools designed to help analysts build machine learning models without requiring them to actually write the code to do so. These machine-learning tools aim to make machine-learning techniques more accessible. Analysts may still tune the parameters of their models but do not necessarily need to write scripts to do so.
+
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/967cffc8-d32f-4e24-bc3a-d645accd22ec)
+
+
+IBM SPSS Modeler
+-
+IBM's SPSS Modeler is one popular tool for building graphical machine learning models. Instead of requiring that users write code, it provides an intuitive interface where analysts can select the tasks that they would like the software to carry out and then connect them in a flowchart-style interface. Figure 10 shows an example of this interface being used to create a decision tree model of consumer credit data.
+
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/6c473af2-5a04-41ea-a361-0e88b01d22b4)
+
+
+RapidMiner
+-
+RapidMiner is another graphical machine learning tool that works in a manner similar to IBM SPSS Modeler. It offers access to hundreds of different algorithms that may be placed in a visually designed machine-learning workflow. RapidMiner also offers prebuilt analytic templates for common business scenarios. Figure 12 shows the visual design of a decision tree task in RapidMiner.
+
+Figure 11: Exploring a data model in SPSS Modeler
+https://d24jp206mxeyfm.cloudfront.net/assets/courseware/v1/12084f9ec02261c73a262d6b57a92dc3/asset-v1:CITI+DA+2023+type@asset+block/Figure_11_Exploring_a_data_model_in_SPSS_Modeler.png
+
+Figure 13 shows the result of creating this decision tree in RapidMiner. The presentation of results is not quite as visually appealing as the decision tree in SPSS Modeler, but it provides similar information to the analyst.
+https://d24jp206mxeyfm.cloudfront.net/assets/courseware/v1/5e9c7712d34574cff2a662d4bf212140/asset-v1:CITI+DA+2023+type@asset+block/Figure_12_Designing_a_machine_learning_task_in_RapidMiner.png
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/2aae7c7b-c365-4918-af46-3e1fe856f123)
+Figure 12: Designing a machine learning task in RapidMiner
+
+![image](https://github.com/Siphamandl-tech/Data-Analytics/assets/131585011/e33af559-b253-472d-8780-ee1289035f94)
+Figure 13: Exploring a data model in RapidMiner
+
+
+
+
+
+
+
+
 
